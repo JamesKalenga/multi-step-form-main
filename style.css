@@ -1,0 +1,172 @@
+
+/* This is used to reset the normal styles */
+*,*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+:root{
+--Marine-blue: hsl(213, 96%, 18%);
+--Purplish-blue: hsl(243, 100%, 62%);
+--Pastel-blue: hsl(228, 100%, 84%);
+--Light-blue: hsl(206, 94%, 87%);
+--Strawberry-red: hsl(354, 84%, 57%);
+--Cool-gray: hsl(231, 11%, 63%);
+--Light-gray: hsl(229, 24%, 87%);
+--Magnolia: hsl(217, 100%, 97%);
+--Alabaster: hsl(231, 100%, 99%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Cool-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.container{
+    height: 590px;
+    width: 880px;
+    display: flex;
+    background-color: var(--Light-gray);
+    border-radius: 10px;
+    
+    
+}
+
+.content h1{
+    color: var(--Purplish-blue);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.content p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: var(--Cool-gray);
+
+    
+}
+
+.left-img{
+      height: 568px;
+      width: 274px;
+
+      background-image: url('/assets/images/bg-sidebar-desktop.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: auto 70px auto 15px;
+} 
+.content{
+    width: 50%;
+    margin-top: 40px;
+    margin-right: 50px;
+    
+}
+.content form > label, .content form > input{
+    display: flex;
+    flex-direction: column;
+}
+
+.content form > label{
+    color: var(--Purplish-blue);
+    font-weight:500;
+    font-size: 1rem;
+}
+
+.content > form > input{
+    width: 100%;
+    background-color: var(--Light-gray);
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid var(--Cool-gray);
+    margin: 10px 0px 20px 0px;
+
+}
+
+
+.content > form > input::placeholder{
+    color: var(--Cool-gray);
+    font-weight: 500;
+    padding-left: 10px;
+    
+}
+
+.content > form > input:focus{
+    outline: none;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 160px;
+
+}
+.content > form > .btn > button{
+    width: 25%;
+    border: 0;
+    background-color: var(--Purplish-blue);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--White);
+    font-weight: 500;
+
+     
+}
+
+
+
+
+.left-img .steps-width{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.left-img .steps-width .progress{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Light-gray);
+    color: var(--White);
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+.left-img .steps-width .step-info{
+    display: flex;
+    flex-direction: column;
+
+}
+.left-img .steps-width .step-info  .step{
+    color:var(--Light-gray);
+    font-size: 12px;
+    text-transform:uppercase;
+}
+
+.left-img .steps-width .step-info  .step-info{
+    color: var(--White);
+    margin-top: 2px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+  
